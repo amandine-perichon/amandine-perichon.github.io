@@ -1,3 +1,6 @@
+/* ----------------------- Using CSS Reset -----------------------*/
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -51,6 +54,7 @@ table {
 /* ----------------------- Amandine CSS -----------------------*/
 
 body {
+  font-family: cursive;
   background: #e1e1ea;
 }
 
@@ -58,69 +62,85 @@ body {
 
 header {
   background: #df9fbf;
-  height: 70px;
+  padding:10px;
+  overflow: auto;
+  border-bottom: 1px solid #3f3f5a;
 }
 
 header h1 {
   font-size: 30px;
+  font-family: 'Chango', cursive;
   display: inline;
-  margin: 20px;
   float: left;
+  text-transform: uppercase;
 }
 
 nav {
   display: inline-block;
   float: right;
-  margin: 20px;
 }
 
 nav ul li {
+  font-family: 'Chango', cursive;
   display: inline-block;
+  text-transform: uppercase;
+  margin: 10px;
+  letter-spacing: 3px;
 }
 
 nav:after {
   clear: both;
 }
 
-.current-nav-item {
-  color: blue;
+.current-nav-item a {
+  text-decoration: none;
+  color: #7b1e5e;
 }
 
 /* IMAGE SECTION */
 
 #image-amandine {
-  height: 300px;
+  width: 100%;
 }
 
 /* BLOG ENTRIES STYLE */
 
 .blog-entries {
   height: 100%;
+  margin: 20px;
 }
 
-article {
-  height: 100px;
+.container {
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
 }
 
 article h2 {
+  font-weight: bold;
+  text-align: center;
   font-size: 26px;
-  margin: 20px;
+  margin: 20px 0;
 }
 
 article p {
-  margin: 20px;
+  margin: 20px 0;
 }
 
+/* BUTTON STYLE */
+
 .button {
-  background: #000000;
-  margin: 20px;
-  border: solid 2px blue;
+  background: #df9fbf;
+  margin: 20px 0;
+  border: solid 2px #3f3f5a;
+  border-radius: 10px;
   display: inline;
 }
 
 .button a {
-  padding: 5px;
-  color: #ffffff;
+  padding: 20px;
+  text-decoration: none;
+  color: #3f3f5a;
 }
 
 /* FOOTER STYLE */
@@ -128,9 +148,16 @@ article p {
 footer {
   color: #ffffff;
   background: #3f3f5a;
-  height: 50px;
+  overflow: auto;
+  padding: 10px;
 }
 
 footer a {
   color: #ffffff;
+}
+
+/* LIST STYLE */
+
+li{
+  list-style: square;
 }
