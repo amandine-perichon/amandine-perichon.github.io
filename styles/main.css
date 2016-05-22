@@ -58,6 +58,10 @@ body {
   background: #e1e1ea;
 }
 
+em {
+  font-style: italic;
+}
+
 /* HEADER STYLE */
 
 header {
@@ -131,10 +135,8 @@ article p {
 
 .button {
   background: #df9fbf;
-  margin: 20px 0;
   border: solid 2px #3f3f5a;
   border-radius: 10px;
-  display: inline;
 }
 
 .button a {
