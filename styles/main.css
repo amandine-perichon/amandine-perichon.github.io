@@ -65,8 +65,16 @@ body {
   background: #df9fbf;
 }
 
-em {
+.disclaimer {
+  color: #7b1e5e;
+}
+
+em, quote {
   font-style: italic;
+}
+
+strong {
+  font-weight: bold; 
 }
 
 /* HEADER STYLE */
