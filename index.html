@@ -10,52 +10,54 @@
   </head>
 
   <body>
-    <header>
-      <ul>
-        <li>Unicorns</li>
-        <li>Blogs</li>
-        <li>Projects</li>
-        <li>About</li>
+    <header class="container u-full-width">
+      <ul class="nav">
+        <li class="two columns">Unicorns</li>
+        <li class="two columns">Blogs</li>
+        <li class="two columns"><img src="http://placekitten.com/50/50" alt=""></li>
+        <li class="two columns">Projects</li>
+        <li class="two columns">About</li>
       </ul>
-      <img src="http://placekitten.com/50/50" alt="">
     </header>
 
-    <div class="intro">
-      <div>
+    <div class="intro container">
+      <div class="row">
         <h1>Web dev and unicorns - add text</h1>
       </div> 
-      <p>
-        Placeholder for the introduction about the blog. Placeholder for the introduction about the blog. Placeholder for the introduction about the blog. Placeholder for the introduction about the blog
-      </p>
+      <div class="row">
+        <p>
+          Placeholder for the introduction about the blog. Placeholder for the introduction about the blog. Placeholder for the introduction about the blog. Placeholder for the introduction about the blog
+        </p>
+      </div>
     </div>
 
-    <div class="featured-blog-list">
-      <div class="featured">
+    <div class="featured-blog-list container">
+      <div class="featured row">
         <h2>Featured</h2>
       </div>
-      <div class="featured-blog">
-        <div class="blog-reference">
+      <div class="featured-blog row">
+        <div class="blog-reference three columns">
           <p>C2</p>
         </div>
-        <div class="blog-summary">
+        <div class="blog-summary nine columns">
           <h3>Blog featured 1</h3> 
           <p>Here is the summary of the blog</p>
           <a href="#">Read more</a>
         </div>
       </div>
-      <div class="featured-blog">
-        <div class="blog-reference">
-          <p>T3</p>
-        </div>
-        <div class="blog-summary">
+      <div class="featured-blog row">
+        <div class="blog-summary nine columns">
           <h3>Blog featured 2</h3> 
           <p>Here is the summary of the blog</p>
           <a href="#">Read more</a>
         </div>
+        <div class="blog-reference three columns">
+          <p>T3</p>
+        </div>
       </div>
     </div>
 
-    <footer>
+    <footer class="container u-full-width">
       <a href="http://devacademy.co.nz/">More about dev academy</a>
     </footer> 
   
