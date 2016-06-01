@@ -1,16 +1,57 @@
 
 
+/* --------------- NAV RULES ---------------*/
+
+.nav {
+  margin: 0 auto;
+}
+
+/* --------------- INTRO RULES ---------------*/
+
+.intro {
+  border: 0.2rem solid black;
+}
+
+.website-description {
+  background: grey;
+  height: 40rem;
+  border-bottom: 0.2rem solid black;
+}
+
+/* --------------- BLOG RULES ---------------*/
+
+.featured-blog {
+  border: 0.2rem solid black;
+}
+
+.blog-reference {
+  text-align: center;
+  font-size: 4rem;
+}
+
 
 /* --------------- HEADER RULES ---------------*/
 
 header {
+  max-width: auto;
   height: 8rem;
   border-bottom: 0.2rem solid black;
 }
 
 /* --------------- FOOTER RULES ---------------*/
 
-footer, header {
+footer {
+  max-width: auto;
   height: 8rem;
   border-top: 0.2rem solid black;
+}
+
+/* --------------- FOOTER RULES ---------------*/
+
+@media (min-width: 400px) {
+  header,
+  .featured-blog, 
+  .intro {
+    margin-bottom: 4rem;
+  }
 }
