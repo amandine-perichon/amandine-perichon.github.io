@@ -38,6 +38,14 @@ header {
   border-bottom: 0.2rem solid black;
 }
 
+.logo {
+  height: 8rem;
+  background: black;
+  position: relative;
+  top: 4rem;
+  overflow: visible;
+}
+
 /* --------------- FOOTER RULES ---------------*/
 
 footer {
@@ -49,9 +57,9 @@ footer {
 /* --------------- FOOTER RULES ---------------*/
 
 @media (min-width: 400px) {
-  header,
   .featured-blog, 
   .intro {
     margin-bottom: 4rem;
+    margin-top: 8rem;
   }
 }
