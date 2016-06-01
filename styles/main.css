@@ -1,0 +1,16 @@
+
+
+
+/* --------------- HEADER RULES ---------------*/
+
+header {
+  height: 8rem;
+  border-bottom: 0.2rem solid black;
+}
+
+/* --------------- FOOTER RULES ---------------*/
+
+footer, header {
+  height: 8rem;
+  border-top: 0.2rem solid black;
+}
