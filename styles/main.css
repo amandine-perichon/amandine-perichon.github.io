@@ -1,71 +1,78 @@
+/* --------------- LAYOUT & GRID RULES ---------------*/
 
+  /* Component width is 100% */
+  .intro,
+  .featured-blog-list {
+    width: 100%;
+    padding: 0;
+  }
+
+/* --------------- BORDER RULES --------------- */
+
+header,
+.intro,
+.website-description,
+.featured, .featured-blog
+ {
+  border-bottom: 0.2rem solid black;
+}
+
+/* --------------- HEADER RULES -------------*/
+
+header {
+  height: 8rem;
+}
 
 /* --------------- NAV RULES ---------------*/
 
-.nav {
-  margin: 0 auto;
-}
-
-.logo {
+/* Logo size in rem*/
+.logo img {
   height: 8rem;
-  background: black;
-  position: relative;
-  top: 4rem;
-  overflow: visible;
+  width: 8rem;
 }
 
 /* --------------- INTRO RULES ---------------*/
 
-.intro {
-  border: 0.2rem solid black;
-}
 
 .website-description {
   background: grey;
   height: 40rem;
-  border-bottom: 0.2rem solid black;
 }
-
 
 /* --------------- BLOG RULES ---------------*/
 
-.featured-blog {
-  border: 0.2rem solid black;
-}
 
 .blog-reference {
-  text-align: center;
   font-size: 4rem;
 }
 
-.blog-summary p {
+.blog-summary p,
+.blog-summary a {
   display: none;
-}
-
-/* --------------- HEADER RULES ---------------*/
-
-header {
-  max-width: auto;
-  height: 8rem;
-  border-bottom: 0.2rem solid black;
-}
-
-.logo {
-  height: 8rem;
-  background: black;
 }
 
 /* --------------- FOOTER RULES ---------------*/
 
 footer {
-  max-width: auto;
   height: 8rem;
-  border-top: 0.2rem solid black;
 }
 
 /* --------------- FOOTER RULES ---------------*/
 
-@media screen and (min-width: 550px) {
+
+
+/* --------------- MEDIA QUERIES RULES ---------------*/
+
+@media (min-width: 550px) {
+
+  /* Change menu*/
+  .logo {
+    position: relative;
+    top: 4rem;
+    overflow: visible;
+  }
+
+  /* Add margins*/
   .featured-blog, 
   .intro {
     margin-bottom: 4rem;
@@ -75,14 +82,21 @@ footer {
     margin-top: 8rem;
   }
 
-  .logo {
-  position: relative;
-  top: 4rem;
-  overflow: visible;
+  .intro,
+  .featured-blog-list {
+    width: 80%;
+    padding: 0;
   }
 
-  .blog-summary p {
-  display: block;
-}
+  /* Unhide*/
+  .blog-summary p,
+  .blog-summary a {
+    display: block;
+  } 
+
+  /* Change borders*/
+  footer {
+    border-top: 0.2rem solid black;
+  }
 
 }
