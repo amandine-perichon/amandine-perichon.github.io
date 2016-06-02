@@ -20,19 +20,31 @@ header,
   border-top: 0.2rem solid black;
 }
 
-/* --------------- HEADER RULES -------------*/
-
-header {
-  height: 8rem;
-}
 
 /* --------------- NAV RULES ---------------*/
 
 /* Logo size in rem*/
 .logo img {
-  height: 8rem;
-  width: 8rem;
+  height: 4rem;
+  width: 4rem;
 }
+
+.nav {
+  position: relative;
+  height: 8rem;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav div {
+  margin: 0 1rem;
+  text-align: center;
+}
+
+.logo {
+    position: absolute;
+    bottom: -4rem;
+  }
 
 /* --------------- INTRO RULES ---------------*/
 
@@ -65,19 +77,16 @@ footer {
   height: 8rem;
 }
 
-/* --------------- FOOTER RULES ---------------*/
-
-
 
 /* --------------- MEDIA QUERIES RULES ---------------*/
 
 @media (min-width: 550px) {
 
   /* Change menu*/
-  .logo {
-    position: relative;
-    top: 4rem;
-    overflow: visible;
+
+  .logo img {
+  height: 8rem;
+  width: 8rem;
   }
 
   /* Add margins*/
