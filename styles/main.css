@@ -10,11 +10,14 @@
 /* --------------- BORDER RULES --------------- */
 
 header,
-.intro,
+.intro, 
 .website-description,
-.featured, .featured-blog
- {
+.featured, .featured-blog {
   border-bottom: 0.2rem solid black;
+}
+
+.intro {
+  border-top: 0.2rem solid black;
 }
 
 /* --------------- HEADER RULES -------------*/
@@ -33,6 +36,9 @@ header {
 
 /* --------------- INTRO RULES ---------------*/
 
+.intro {
+    margin-top: 8rem;
+}
 
 .website-description {
   background: grey;
@@ -44,6 +50,8 @@ header {
 
 .blog-reference {
   font-size: 4rem;
+  height: 100%;
+  background: yellow;
 }
 
 .blog-summary p,
@@ -78,10 +86,6 @@ footer {
     margin-bottom: 4rem;
   }
 
-  .intro {
-    margin-top: 8rem;
-  }
-
   .intro,
   .featured-blog-list {
     width: 80%;
@@ -95,6 +99,22 @@ footer {
   } 
 
   /* Change borders*/
+  
+  header,
+  .intro, 
+  .featured, .featured-blog {
+    border: 0.2rem solid black;
+  }
+
+  .website-description {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .featured {
+    border: none;
+  }
+
   footer {
     border-top: 0.2rem solid black;
   }
