@@ -35,25 +35,32 @@ header,
 
 /* Logo size in rem*/
 .logo img {
-  height: 4rem;
-  width: 4rem;
+  height: 8rem;
+  width: 8rem;
 }
 
 .nav {
-  position: relative;
-  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   width: 80%;
   margin: 0 auto;
 }
 
 .nav div {
   margin: 0 1rem;
+  padding: 0.2rem 0;
   text-align: center;
 }
 
 .logo {
+  position: relative;
+}
+
+.logo img {
     position: absolute;
-    bottom: -4rem;
+    bottom: -3.5rem;
+    left: 1rem;
   }
 
 /* --------------- INTRO RULES ---------------*/
@@ -102,11 +109,20 @@ footer {
     order: 2;
   }
 
-  /* Change logo*/
+  /* Change nav bar*/
+
+  .nav {
+    flex-direction: row;
+  }
+
+  .nav div {
+    padding: 3rem 0;
+  }
 
   .logo img {
-  height: 8rem;
-  width: 8rem;
+    position: absolute;
+    left: 0;
+    bottom: -4.2rem;
   }
 
   /* Add margins*/
