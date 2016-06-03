@@ -7,6 +7,11 @@
     padding: 0;
   }
 
+header.container, 
+footer.container {
+  width: 100%;
+}
+
 /* --------------- BORDER RULES --------------- */
 
 header,
@@ -82,7 +87,7 @@ footer {
 
 @media (min-width: 550px) {
 
-  /* Change menu*/
+  /* Change logo*/
 
   .logo img {
   height: 8rem;
@@ -109,7 +114,6 @@ footer {
 
   /* Change borders*/
   
-  header,
   .intro, 
   .featured, .featured-blog {
     border: 0.2rem solid black;
