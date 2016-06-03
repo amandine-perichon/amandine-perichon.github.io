@@ -12,6 +12,11 @@ footer.container {
   width: 100%;
 }
 
+.featured-blog {
+  display: flex;
+  flex-direction: column;
+}
+
 /* --------------- BORDER RULES --------------- */
 
 header,
@@ -86,6 +91,16 @@ footer {
 /* --------------- MEDIA QUERIES RULES ---------------*/
 
 @media (min-width: 550px) {
+
+  /* Change order */
+
+  .featured-blog {
+    flex-direction: row;
+  }
+
+  .featured-blog.even .blog-reference {
+    order: 2;
+  }
 
   /* Change logo*/
 
