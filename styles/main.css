@@ -2,7 +2,8 @@
 
 .website-title,
 .featured,
-.blog-reference {
+.blog-reference,
+.unicorn {
   font-family: chango;
 }
 
@@ -58,7 +59,8 @@ footer a,
 
 /* Component width is 100% */
 .intro,
-.blog-list, 
+.blog-list,
+.unicorn-list, 
 header.container, 
 footer.container {
   width: 100%;
@@ -91,7 +93,9 @@ footer.container {
 header,
 .intro, 
 .website-title,
-.featured, .blog {
+.featured, 
+.blog,
+.unicorn {
   border-bottom: 0.2rem solid black;
 }
 
@@ -176,6 +180,17 @@ header,
   display: none;
 }
 
+/* --------------- UNICORNS RULES ---------------*/
+
+.unicorn {
+  text-align: center;
+  padding: 3rem;
+}
+
+.unicorn a {
+  text-decoration: none;
+}
+
 /* --------------- FOOTER RULES ---------------*/
 
 footer {
@@ -221,12 +236,14 @@ footer {
   }
 
   .blog, 
-  .intro {
+  .intro,
+  .unicorn {
     margin-bottom: 4rem;
   }
 
   .intro,
-  .blog-list {
+  .blog-list,
+  .unicorn-list {
     width: 80%;
   }
 
@@ -241,7 +258,8 @@ footer {
   .intro, 
   .featured, 
   .blog,
-  .blog-content {
+  .blog-content,
+  .unicorn {
     border: 0.2rem solid black;
   }
 
