@@ -1,28 +1,36 @@
 /* --------------- LAYOUT & GRID RULES ---------------*/
 
-  /* Component width is 100% */
-  .intro,
-  .featured-blog-list {
-    width: 100%;
-    padding: 0;
-  }
-
+/* Component width is 100% */
+.intro,
+.blog-list, 
 header.container, 
 footer.container {
   width: 100%;
 }
 
-.featured-blog {
-  display: flex;
-  flex-direction: column;
+.intro,
+.fblog-list {
+  padding: 0;
+}
+
+.featured h2,
+.blog h3,
+.blog p,
+.blog a {
+  padding: 0rem 3rem;
+  margin: 1rem;
+}
+
+footer.container {
+  padding: 2.5rem;
 }
 
 /* --------------- BORDER RULES --------------- */
 
 header,
 .intro, 
-.website-description,
-.featured, .featured-blog {
+.website-title,
+.featured, .blog {
   border-bottom: 0.2rem solid black;
 }
 
@@ -60,27 +68,45 @@ header,
 .logo img {
     position: absolute;
     bottom: -3.5rem;
-    left: 1rem;
+    left: 0;
   }
 
 /* --------------- INTRO RULES ---------------*/
 
-.intro {
-    margin-top: 8rem;
-}
-
-.website-description {
+.website-title {
+  padding: 3rem;
+  vertical-align: bottom;
   background: grey;
   height: 40rem;
 }
 
+.website-title h1 {
+  padding-top: 25rem;
+}
+
+.intro p {
+  padding: 3rem;
+}
+
+
 /* --------------- BLOG RULES ---------------*/
 
+.blog {
+  display: flex;
+  flex-direction: column;
+}
 
 .blog-reference {
+  display: flex;
+  justify-content: center;
   font-size: 4rem;
-  height: 100%;
   background: yellow;
+}
+
+.blog-reference p {
+  align-self: center;
+  padding: 0;
+  margin: 0;
 }
 
 .blog-summary p,
@@ -101,11 +127,11 @@ footer {
 
   /* Change order */
 
-  .featured-blog {
+  .blog {
     flex-direction: row;
   }
 
-  .featured-blog.even .blog-reference {
+  .blog.even .blog-reference {
     order: 2;
   }
 
@@ -126,15 +152,19 @@ footer {
   }
 
   /* Add margins*/
-  .featured-blog, 
+
+  .intro {
+    margin-top: 8rem;
+  }
+
+  .blog, 
   .intro {
     margin-bottom: 4rem;
   }
 
   .intro,
-  .featured-blog-list {
+  .blog-list {
     width: 80%;
-    padding: 0;
   }
 
   /* Unhide*/
@@ -146,17 +176,26 @@ footer {
   /* Change borders*/
   
   .intro, 
-  .featured, .featured-blog {
+  .featured, .blog {
     border: 0.2rem solid black;
   }
 
-  .website-description {
+  .website-title {
     border-top: none;
     border-bottom: none;
   }
 
   .featured {
     border: none;
+  }
+
+  .blog-reference {
+    border-right: 0.2rem solid black;
+  }
+
+  .even .blog-reference {
+    border-right: 0;
+    border-left: 0.2rem solid black;
   }
 
   footer {
