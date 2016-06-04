@@ -20,6 +20,7 @@ footer a {
 
 header, footer {
   background: #F63466;
+  background: linear-gradient(#F63466, #E27444);
 }
 
 .nav div,
