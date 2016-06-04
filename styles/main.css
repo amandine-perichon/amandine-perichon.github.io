@@ -1,13 +1,14 @@
 /* --------------- FONT  ---------------*/
 
-.nav,
 .website-title,
 .featured,
-.blog-reference,
-.blog h3,
-.blog a ,
-footer {
+.blog-reference {
   font-family: chango;
+}
+
+header, 
+footer a {
+  font-weight: bold;
 }
 
 .nav,
@@ -19,35 +20,37 @@ footer a {
 /* --------------- COLORS ---------------*/
 
 header, footer {
-  background: #F63466;
-  background: linear-gradient(#F63466, #E27444);
-}
-
-.nav div,
-footer a {
-  color: #000000;
+  background: #D68189;
+  background: linear-gradient(#D68189, #C6A49A);
 }
 
 .website-title {
-  color: #CD9F22;
+  color: #C6A49A;
   background: black;
 }
 
 .featured {
-  color: #CD9F22;
+  color: #E94E77;
 }
 
 .blog-reference {
-  color: #E27444;
-  background: #CCF635;
+  background: #D68189;
 }
 
 .blog-summary h3 {
-  color: #CDCB2B;
+  color: #D68189;
 }
 
 a {
-  color: #E27444;
+  color: #E94E77;;
+}
+
+.nav div a,
+footer a,
+.blog-reference a, 
+.blog-reference p {
+  color: #FFFFFF;
+  text-decoration: none;
 }
 
 /* --------------- LAYOUT & GRID RULES ---------------*/
@@ -157,6 +160,7 @@ header,
   font-size: 4rem;
 }
 
+.blog-reference a,
 .blog-reference p {
   align-self: center;
   padding: 0;
