@@ -1,4 +1,56 @@
+/* --------------- FONT  ---------------*/
+
+.nav,
+.website-title,
+.featured,
+.blog-reference,
+.blog h3,
+.blog a ,
+footer {
+  font-family: chango;
+}
+
+.nav,
+.website-title,
+footer a {
+  text-transform: uppercase;
+}
+
+/* --------------- COLORS ---------------*/
+
+header, footer {
+  background: #F63466;
+}
+
+.nav div,
+footer a {
+  color: #000000;
+}
+
+.website-title {
+  color: #CD9F22;
+  background: black;
+}
+
+.featured {
+  color: #CD9F22;
+}
+
+.blog-reference {
+  color: #E27444;
+  background: #CCF635;
+}
+
+.blog-summary h3 {
+  color: #CDCB2B;
+}
+
+a {
+  color: #E27444;
+}
+
 /* --------------- LAYOUT & GRID RULES ---------------*/
+
 
 /* Component width is 100% */
 .intro,
@@ -74,7 +126,6 @@ header,
 .website-title {
   padding: 3rem;
   vertical-align: bottom;
-  background: grey;
   height: 40rem;
 }
 
@@ -98,7 +149,6 @@ header,
   display: flex;
   justify-content: center;
   font-size: 4rem;
-  background: yellow;
 }
 
 .blog-reference p {
