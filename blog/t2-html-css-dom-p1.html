@@ -1,89 +1,99 @@
 <!DOCTYPE html>
+
 <html>
 
   <head>
-    <title>Web dev and unicorns</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <!-- link href="your-stylesheet-link-here.css" rel="stylesheet" type="text/css" -->
-    <link rel ="stylesheet" type="text/css" href="../styles/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Chango' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <title>Web dev and unicorns</title>
+    <meta charset="UTF-8">
   </head>
-  
+
   <body>
-    <div class=container>
-    <header>
-      <h1>Web dev and unicorns</h1>
-      <nav>
-        <ul>
-          <li class="current-nav-item"><a href="../index.html">Blog</a></li>
-          <li>About</li>
-        </ul>
-      </nav>
+    <header class="container u-max-full-width">
+      <div class="nav">
+        <div class="two columns">Unicorns</div>
+        <div class="two columns">Blogs</div>
+        <div class="two columns logo"><img src="../images/hexicorn.png"></div>
+        <div class="two columns">Projects</div>
+        <div class="two columns">About</div>
+      </div>
     </header>
 
-    <section class="image-section">
-      <img id="image-amandine" src="../images/amandine.png">
-    </section>
+    <div class="intro container">
+      <div class="website-title row">
+        <h1>Web dev <br> and unicorns</h1>
+      </div> 
+    </div>
 
-    <section class="blog-entries">
-      <article>
-        <h2>Cats like boxes... web devs too!</h2>
+    <div class="blog-list container">
+      <div class="blog row">
+        <div class="blog-reference three columns">
+          <p>T2</p>
+        </div>
+        <div class="blog-summary nine columns">
+          <h3>Cats like boxes... web devs too!</h3> 
+        </div>
+      </div>
+      <div class="blog-content row">
+        <p>The common denominator between cats and web devs? They both like boxes of course!</p>
 
-          <p>The common denominator between cats and web devs? They both like boxes of course!</p>
+        <h4>Can you think of an analogy to describe HTML, CSS and the DOM? How would you describe it to your non-technical friend?</h4>
 
-          <h3>Can you think of an analogy to describe HTML, CSS and the DOM? How would you describe it to your non-technical friend?</h3>
+        <p>I liked Udacity's analogy comparing a webpage to a house with a structure with different rooms that have different functions, that are decorated, and elements that can be interacted with. I'll give a go at creating my own analogy.</p>
 
-          <p>I liked Udacity's analogy comparing a webpage to a house with a structure with different rooms that have different functions, that are decorated, and elements that can be interacted with. I'll give a go at creating my own analogy.</p>
+        <p>My analogy is to a couple dancing choreography. This explanation might not work with everyone, but I have lots of dancer friends!</p>
 
-          <p>My analogy is to a couple dancing choreography. This explanation might not work with everyone, but I have lots of dancer friends!</p>
+        <p>Couple dances are usually structured in patterns or "moves", elements that gets reused to build the structure of your dance. Patterns would be our HTML tags, and our choreography (combination of patterns) is our entire HTML.</p>
 
-          <p>Couple dances are usually structured in patterns or "moves", elements that gets reused to build the structure of your dance. Patterns would be our HTML tags, and our choreography (combination of patterns) is our entire HTML.</p>
+        <p>You can add styling to every dance pattern: a hand movement, a knee up, highs and lows. This is our CSS.</p>
 
-          <p>You can add styling to every dance pattern: a hand movement, a knee up, highs and lows. This is our CSS.</p>
+        <p>Have you ever looked at a couple dancing while sticking purely to patterns without styling? It is very boring, much like HTML without any CSS!</p>
 
-          <p>Have you ever looked at a couple dancing while sticking purely to patterns without styling? It is very boring, much like HTML without any CSS!</p>
+        <p>Dancers will need to store and make sense of the combination of patterns in a way that their brain can handle. This is the DOM.</p>
 
-          <p>Dancers will need to store and make sense of the combination of patterns in a way that their brain can handle. This is the DOM.</p>
+        <p>The browser is giving a visual representation of the DOM - based on the HTML/CSS, in the same way the dancers are rendering the choreography stored in their brain. Thankfully, browsers are more consistent than dancers and less prone to mistakes!</p>
 
-          <p>The browser is giving a visual representation of the DOM - based on the HTML/CSS, in the same way the dancers are rendering the choreography stored in their brain. Thankfully, browsers are more consistent than dancers and less prone to mistakes!</p>
+        <p>If you've never done couple dancing in your life, and you're wondering what the heck I'm talking about, I apologize. I'm willing to give dance classes to the whole cohort to make it up!</p>
 
-          <p>If you've never done couple dancing in your life, and you're wondering what the heck I'm talking about, I apologize. I'm willing to give dance classes to the whole cohort to make it up!</p>
+        <h4>What is meant by boxifying design?</h4>
 
-          <h3>What is meant by boxifying design?</h3>
+        <p>Every element on a web page is contained in a rectangle, in other words a box. Boxifying design means taking every element of a webpage design and dividing it into boxes. A box will often include other boxes. For example, the overall page is a box. This box in turn can include two boxes: a main title, and a blog article, which in turn might include a box for an image and a box for text. This also applies to a button with rounded corners, or any other element that does not visually look rectangular, it's a box!</p>
 
-          <p>Every element on a web page is contained in a rectangle, in other words a box. Boxifying design means taking every element of a webpage design and dividing it into boxes. A box will often include other boxes. For example, the overall page is a box. This box in turn can include two boxes: a main title, and a blog article, which in turn might include a box for an image and a box for text. This also applies to a button with rounded corners, or any other element that does not visually look rectangular, it's a box!</p>
+        <p>The outline css property can be used to make the boxes apparent on a webpage. I find it very useful both for debugging my own css and for understanding how an existing webpage is structured.</p>
 
-          <p>The outline css property can be used to make the boxes apparent on a webpage. I find it very useful both for debugging my own css and for understanding how an existing webpage is structured.</p>
+        <h4>What is the box model?</h4>
 
-          <h3>What is the box model?</h3>
+        <p>Knowing that everything in a webpage is a box, we can define several areas within and outside this box:
+        <ul>
+          <li>content: the actual content inside the box, e.g. text</li>
+          <li>padding: the space between the content and the border of the box</li>
+          <li>border: the border of the box</li>
+          <li>margin: the space between this box and other boxes</li>
+        </ul>
+        <br>
+        <p>Padding, border and margin values can be set through css properties.</p>
 
-          <p>Knowing that everything in a webpage is a box, we can define several areas within and outside this box:
-          <ul>
-            <li>content: the actual content inside the box, e.g. text</li>
-            <li>padding: the space between the content and the border of the box</li>
-            <li>border: the border of the box</li>
-            <li>margin: the space between this box and other boxes</li>
-          </ul>
-          <br>
-          <p>Padding, border and margin values can be set through css properties.</p>
+        <p>There are several ways to compute the size (width and height css properties) of a box.You can choose which method to use through the box-sizing property. Here are the ones I know so far: 
+        <ul>
+          <li>content-box: This is the default value for the box-sizing property. This means width and height will include only the content of the box. padding, border and margin are excluded</li>
+          <li>border-box: This means width and height include the content, padding and border, but not the margin.</li>
+        </ul>
+        </p>
 
-          <p>There are several ways to compute the size (width and height css properties) of a box.You can choose which method to use through the box-sizing property. Here are the ones I know so far: 
-          <ul>
-            <li>content-box: This is the default value for the box-sizing property. This means width and height will include only the content of the box. padding, border and margin are excluded</li>
-            <li>border-box: This means width and height include the content, padding and border, but not the margin.</li>
-          </ul>
-          </p>
+        <p>I find border-box practical as it allows you to define your width with a percentage, and add padding afterwards without having to change the percentages (as the padding is included in the size of the box).</p>
 
-          <p>I find border-box practical as it allows you to define your width with a percentage, and add padding afterwards without having to change the percentages (as the padding is included in the size of the box).</p>
+        <p>The box model for an element along with its content, padding, border and margin width is displayed in the web dev tools when inspecting an element!</p>    
+      </div>
+    </div>
 
-          <p>The box model for an element along with its content, padding, border and margin width is displayed in the web dev tools when inspecting an element!</p>    
-      </article>
-    </section>
-
-    <footer>
-    <a href="http://www.devacademy.co.nz">More information about Dev Academy</a>
-    </footer>
-  </div>
+    <footer class="container u-max-full-width">
+      <a href="http://devacademy.co.nz/">More about dev academy</a>
+    </footer> 
+  
   </body>
-
 </html>

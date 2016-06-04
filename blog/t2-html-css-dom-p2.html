@@ -1,35 +1,47 @@
 <!DOCTYPE html>
+
 <html>
 
   <head>
-    <title>Web dev and unicorns</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <!-- link href="your-stylesheet-link-here.css" rel="stylesheet" type="text/css" -->
-    <link rel ="stylesheet" type="text/css" href="../styles/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Chango' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <title>Web dev and unicorns</title>
+    <meta charset="UTF-8">
   </head>
-  
+
   <body>
-    <div class=container>
-    <header>
-      <h1>Web dev and unicorns</h1>
-      <nav>
-        <ul>
-          <li class="current-nav-item"><a href="../index.html">Blog</a></li>
-          <li>About</li>
-        </ul>
-      </nav>
+    <header class="container u-max-full-width">
+      <div class="nav">
+        <div class="two columns">Unicorns</div>
+        <div class="two columns">Blogs</div>
+        <div class="two columns logo"><img src="../images/hexicorn.png"></div>
+        <div class="two columns">Projects</div>
+        <div class="two columns">About</div>
+      </div>
     </header>
 
-    <section class="image-section">
-      <img id="image-amandine" src="../images/amandine.png">
-    </section>
+    <div class="intro container">
+      <div class="website-title row">
+        <h1>Web dev <br> and unicorns</h1>
+      </div> 
+    </div>
 
-    <section class="blog-entries">
-      <article>
-        <h2>Layout, Semantic and Beards</h2>
+    <div class="blog-list container">
+      <div class="blog row">
+        <div class="blog-reference three columns">
+          <p>T2</p>
+        </div>
+        <div class="blog-summary nine columns">
+          <h3>Layout, Semantic and Beards</h3> 
+        </div>
+      </div>
+      <div class="blog-content row">
         <p>Grids and semantic elements are great tools for web developers. Image Placeholders with beards too... kind of!</p>
-        <h3>What is grid based design?</h3>
+        <h4>What is grid based design?</h4>
 
         <p>Grid based design is the practice of dividing your webpage into a grid, using different arrangements of number of columns and widths. For example:
         <ul>
@@ -42,7 +54,7 @@
 
         <p>Many websites use a grid with 12 columns as this gives quite a lot of flexibility. More than 12 columns however would make for too narrow columns.</p>
 
-        <h3>What's all the hype about responsive webpages?</h3>
+        <h4>What's all the hype about responsive webpages?</h4>
 
         <p>Responsive design means developing websites which will resize and adapt to different sizes of screen (different resolutions) and types of devices, ensuring the website is still legible and is looking great.</p>
 
@@ -50,7 +62,7 @@
 
         <p>The chrome dev tools have a cool feature that lets you view a webpage in a different screen size.</p>
 
-        <h3>What is semantic structure?</h3>
+        <h4>What is semantic structure?</h4>
 
         <p>When using semantic structure to build a webpage, one uses elements that have a defined meaning. For instance, the webpage could contain a header, section, and footer. Users will expect the top of a website to contain a header with a website name and a navbar.</p>
 
@@ -58,20 +70,19 @@
 
         <p>Previous versions of HTML achieved semantic structure through assigning a class to elements which are not specific to a type of information. For example &lt;div class="header"&gt; would containt a header, where div elements are not specific to a type of content.</p>
 
-        <h3>Any other points you found interesting and want to reflect on.</h3>
+        <h4>Any other points you found interesting and want to reflect on.</h4>
 
         <p>It was interesting to know what adaptive design is, and that it's different from responsive design. It's also pretty cool to see in practice how to implement responsive design through Media Queries.</p>
 
         <p>I have used a reset in the first version of my website, by copy pasting it, but I'll try to use a link to a reset for my next version.</p>
 
         <p>And lastly... let's say that it was interesting to see what people have invented as image placeholders! Beards? Really? A bit disappointed though that I couldn't find one with unicorns!</p>     
-      </article>
-    </section>
+      </div>
+    </div>
 
-    <footer>
-    <a href="http://www.devacademy.co.nz">More information about Dev Academy</a>
-    </footer>
-  </div>
+    <footer class="container u-max-full-width">
+      <a href="http://devacademy.co.nz/">More about dev academy</a>
+    </footer> 
+  
   </body>
-
 </html>

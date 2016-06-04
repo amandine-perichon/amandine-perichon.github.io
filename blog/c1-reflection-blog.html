@@ -1,64 +1,74 @@
 <!DOCTYPE html>
+
 <html>
 
   <head>
-    <title>Web dev and unicorns</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <!-- link href="your-stylesheet-link-here.css" rel="stylesheet" type="text/css" -->
-    <link rel ="stylesheet" type="text/css" href="../styles/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Chango' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <title>Web dev and unicorns</title>
+    <meta charset="UTF-8">
   </head>
-  
+
   <body>
-    <div class=container>
-    <header>
-      <h1>Web dev and unicorns</h1>
-      <nav>
-        <ul>
-          <li class="current-nav-item"><a href="../index.html">Blog</a></li>
-          <li>About</li>
-        </ul>
-      </nav>
+    <header class="container u-max-full-width">
+      <div class="nav">
+        <div class="two columns">Unicorns</div>
+        <div class="two columns">Blogs</div>
+        <div class="two columns logo"><img src="../images/hexicorn.png"></div>
+        <div class="two columns">Projects</div>
+        <div class="two columns">About</div>
+      </div>
     </header>
 
-    <section class="image-section">
-      <img id="image-amandine" src="../images/amandine.png">
-    </section>
+    <div class="intro container">
+      <div class="website-title row">
+        <h1>Web dev <br> and unicorns</h1>
+      </div> 
+    </div>
 
-    <section class="blog-entries">
-      <article>
-        <h2>My first week at Dev Academy</h2>
+    <div class="blog-list container">
+      <div class="blog row">
+        <div class="blog-reference three columns">
+          <p>C1</p>
+        </div>
+        <div class="blog-summary nine columns">
+          <h3>My first week at Dev Academy</h3> 
+        </div>
+      </div>
+      <div class="blog-content row">
         <p>It's only my 4th day of the remote phase, and I'm already loving it! It just feels like the right place for me.</p>
 
-       <p>The culture at EDA is exactly what I was looking for. As an EDA teacher said: taking part in the EDA bootcamp is like being in the kitchen preparing your food together with your fellow students - rather than sitting at a table in a restaurant expecting your education to be fed to you. At EDA you create your own study environment, and contribute to the experience of your cohort members. This sounds like the kind of environment in which I will thrive. So far I've been really proactive about gaining web dev skills and I'm also trying to help my cohort on Slack when I can.</p>
+        <p>The culture at EDA is exactly what I was looking for. As an EDA teacher said: taking part in the EDA bootcamp is like being in the kitchen preparing your food together with your fellow students - rather than sitting at a table in a restaurant expecting your education to be fed to you. At EDA you create your own study environment, and contribute to the experience of your cohort members. This sounds like the kind of environment in which I will thrive. So far I've been really proactive about gaining web dev skills and I'm also trying to help my cohort on Slack when I can.</p>
 
-      <p>Before registering for the bootcamp, I attended "A day in the life at EDA" in Wellington. This gave me a pretty good idea of what to expect about the format of the challenges and the importance given to engineering empathy during the bootcamp. The start of the bootcamp has made me even more comfortable with my choice, and it feels great to see the level of motivation in my cohort.</p>
+        <p>Before registering for the bootcamp, I attended "A day in the life at EDA" in Wellington. This gave me a pretty good idea of what to expect about the format of the challenges and the importance given to engineering empathy during the bootcamp. The start of the bootcamp has made me even more comfortable with my choice, and it feels great to see the level of motivation in my cohort.</p>
 
-      <P>Things I'm excited about</P>
-      <ul>
-        <li>CREATING stuff</li>
-        <li>learning, like crazy, everyday</li>
-        <li>having fun fun fun</li>
-        <li>gaining in depth understanding of the subjects I'm interested in</li>
-        <li>collaborating with like-minded individuals - GO NIKAU!!!</li>
-        <li>being part of a community: the EDA community &amp; the dev community</li>
-      </ul> 
+        <P>Things I'm excited about</P>
+        <ul>
+          <li>CREATING stuff</li>
+          <li>learning, like crazy, everyday</li>
+          <li>having fun fun fun</li>
+          <li>gaining in depth understanding of the subjects I'm interested in</li>
+          <li>collaborating with like-minded individuals - GO NIKAU!!!</li>
+          <li>being part of a community: the EDA community &amp; the dev community</li>
+        </ul> 
 
-      <p>Things I'm nervous about</p>
-      <ul>
-        <li>my job getting in the way of my study hours, and helping my cohort</li>
-        <li>not getting enough sleep because my brain is so exited it won't shut down at night</li>
-        <li>pair programming -- scared --</li>
-        <li>on the long term, finding a job, an amazing one that is</li>
-      </ul>
-        
-      </article>
-    </section>
+        <p>Things I'm nervous about</p>
+        <ul>
+          <li>my job getting in the way of my study hours, and helping my cohort</li>
+          <li>not getting enough sleep because my brain is so exited it won't shut down at night</li>
+          <li>pair programming -- scared --</li>
+          <li>on the long term, finding a job, an amazing one that is</li>
+        </ul>
+      </div>
+    </div>
 
-    <footer>
-    <a href="http://www.devacademy.co.nz">More information about Dev Academy</a>
-    </footer>
-  </div>
+    <footer class="container u-max-full-width">
+      <a href="http://devacademy.co.nz/">More about dev academy</a>
+    </footer> 
+  
   </body>
-
 </html>

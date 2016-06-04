@@ -62,7 +62,7 @@ footer.container {
 }
 
 .intro,
-.fblog-list {
+.blog-list {
   padding: 0;
 }
 
@@ -72,6 +72,11 @@ footer.container {
 .blog a {
   padding: 0rem 3rem;
   margin: 1rem;
+}
+
+.blog-content {
+  padding: 0rem 3rem;
+  padding-top: 2rem;
 }
 
 footer.container {
@@ -115,11 +120,11 @@ header,
 }
 
 .logo img {
-  height: 12rem;
-  width: 12rem;
+  height: 8rem;
+  width: 8rem;
   position: absolute;
-  bottom: -6rem;
-  left:0;
+  bottom: -4rem;
+  left: -4rem;
   }
 
 /* --------------- INTRO RULES ---------------*/
@@ -156,6 +161,10 @@ header,
   align-self: center;
   padding: 0;
   margin: 0;
+}
+
+.blog-content {
+  margin-bottom: 4rem;
 }
 
 .blog-summary p,
@@ -195,7 +204,10 @@ footer {
   }
 
   .logo img {
+    height: 12rem;
+    width: 12rem;
     left: 0;
+    bottom: -6rem;
   }
 
   /* Add margins*/
@@ -223,7 +235,9 @@ footer {
   /* Change borders*/
   
   .intro, 
-  .featured, .blog {
+  .featured, 
+  .blog,
+  .blog-content {
     border: 0.2rem solid black;
   }
 
