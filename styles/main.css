@@ -88,6 +88,10 @@ footer.container {
   padding: 2.5rem;
 }
 
+.four.columns img {
+  width: 100%;
+}
+
 /* --------------- BORDER RULES --------------- */
 
 header,

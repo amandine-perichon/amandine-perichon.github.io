@@ -36,11 +36,96 @@
           <p>T3</p>
         </div>
         <div class="blog-summary nine columns">
-          <h3>Title</h3> 
+          <h3>Implementing a first responsive website</h3> 
         </div>
       </div>
       <div class="blog-content row">
-          <p>Content</p>
+        <h4>What a responsive site is, and why responsiveness is important</h4>
+        <p>
+          A responsive website resizes and adapts to different sizes of screen (different resolutions) and types of devices, ensuring the website is still legible and is looking great.
+        </p>
+        <p>
+          There is a multitude of devices out there - desktops, laptops, phones, tablets of different sizes. Responsiveness is important to ensure great user experience on all of these devices.
+        </p>
+
+        <h4>What mobile first design is, and why it's important</h4>
+        <p>
+          Mobile first design is the process of designing your website firstly for mobile devices. Your first wireframes will be for mobile screens, and your basic CSS rules will be written to make the content look legible and good on mobile. CSS rules for desktop only come in a second phase of your development process and are included in media queries to be applied only on screen sizes above a certain threshold, also called breakpoint.
+        </p>
+        <p>
+          Mobile first design is important as is it easier to design for small screens then scale up, than the other way around. It helps focus on the content legiblibility and relevence rather than focusing on the design. Overall, it leads to better user experience.
+        </p>
+
+        <h4>What frameworks are, and their pros and cons</h4>
+        <p>A framework is a predefine structure, or basic solution to a common problem. For instance, the CSS Skeleton framework includes a grid system for building websites. Rather than each web developer recreating a grid structure everytime they build a website, they can use an existing framwork and don't have to create a grid system. There are different frameworks solving the same standard problem, with solutions having different complexities and fitting different instances of that problem. </p>
+
+        <p>
+          Advantages to using a framwork:
+          <br>
+          <ul>
+            <li>Efficiency: unsing a framework is easier and faster, you don't need to reinvent the wheel!</li>
+            <li>Good practices: frameworks are written using best practices and standards, e.g. with regards to breakpoints for media queries</li>
+            <li>Testing: frameworks consider browser compatibility which is not easy to test, and quality is high thanks to the feedback from the developer community</li>
+            <li>Collaboration: all project members use the standard and naming conventions set by the framework which make collaboration easier</li>
+          </ul>
+
+          Disadvantages to using a framework:
+          <br>
+          <ul>
+            <li>Learning curve: Learning to use a framework can be quite time consuming</li>
+            <li>Customization: framworks can be limiting, and require a lot of customization. This can represent a lengthy addition of code in order to override framework styles which become unused code</li>
+            <li>Mastery: using a framework, a developer, especially an inexperienced one, misses out on learning to implement the basics, and ends up not knowing the code as well as if they had written it</li>
+          </ul>
+        </p>
+
+        <h4>What a wireframe is and why we use it</h4>
+        <p>
+          A wireframe is a static picture, a mockup of what your website layout will look like. It helps have an overview of the structure of the website, its skeleton, amd make sure all content elements are included.
+        </p>
+        <p>
+          Wireframes can be deconstructed into boxes (boxifying), which will be the basic elements of our HTML. Basic elements of design are also included, for example: number of columns, formart of the menu. Wireframes usually do not include colors and images, rather they use simple lines - wires - to represent the elements on the page.
+        </p>
+
+        <h4>The aspects of your wireframes you found difficult to implement, and why</h4>
+        <p>
+          In general, customizing the website lead to many specificity issues. Additionally, building the features incrementally lead to a CSS that is not well structured and would be really difficult for someone else to understand. There is some serious technical debt going on here, and I didn't have time to do any refactoring.
+        </p>
+
+        <p>
+          The menu was a difficult part to implement, particularly positioning the logo halfway on the header in desktop screens, using a position absolute on the container, and relative on the logo. 
+        </p>
+
+        <p>
+          I find centering elements sometimes complicated. At first, I tried positioning without flex boxes for the sake of learning. However, after loosing quite some time not getting the results I was after, I resorted to flex boxes to center element and change the direction of the flow of elements.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="four columns">
+          <img src="../images/wireframe-index-page-mobile.png" alt="">
+        </div>
+
+        <div class="four columns">
+          <img src="../images/wireframe-blog-index-mobile.png" alt="">
+        </div>
+
+        <div class="four columns">
+          <img src="../images/wireframe-blog-page-mobile.png" alt="">
+        </div>
+      </div>
+
+      <div>
+        <div class="four columns">
+          <img src="../images/wireframe-index-page-desktop.png" alt="">
+        </div>
+
+        <div class="four columns">
+          <img src="../images/wireframe-blog-index-desktop.png" alt="">
+        </div>
+
+        <div class="four columns">
+          <img src="../images/wireframe-blog-page-desktop.png" alt="">
+        </div>
       </div>
     </div>
 
