@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Chango' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <title>Web dev and unicorns</title>
+    <meta charset="UTF-8">
+  </head>
+
+  <body>
+    <header class="container u-max-full-width">
+            <div class="nav">
+        <div class="two columns"><a href="../unicorns.html" title="Unicorns">Unicorns</a></div>
+        <div class="two columns"><a href="../blogs.html" title="Blogs">Blogs</a></div>
+        <div class="two columns logo"><a href="index.html" title="Index"><img src="../images/hexicorn.png"></a></div>
+        <div class="two columns"><a href="#" title="Projects">Projects</a></div>
+        <div class="two columns"><a href="#" title="About">About</a></div>
+      </div>
+    </header>
+
+    <div class="intro container">
+      <div class="website-title row">
+        <h1>Web dev <br> and unicorns</h1>
+      </div> 
+    </div>
+
+    <div class="blog-list container">
+      <div class="blog row">
+        <div class="blog-reference three columns">
+          <p>T5</p>
+        </div>
+        <div class="blog-summary nine columns">
+          <h3>Problem solving</h3> 
+        </div>
+      </div>
+      <div class="blog-content row">
+        <h4>Tell your non-tech friend a story about a time you got blocked on a simple problem and solved a problem in an elegant way?</h4>
+        <p>
+          At some point last week, I was blocked on an assignment as was not using the bracket notation to access an object property, whereas this was needed. I read the error messages, which provided the line of the error, and that the operations I was trying to do couldn't be done on <em>Undefined</em>. Although it wasn't when I started learning programming, debugging now just feels normal, code mostly doesn't work on the fist run attempt, but it's ok, that's how you learn.
+        </p>
+        <p>
+          I read about currying in the Eloquent Javascript chapter on higher order functions, I used  the concept to refactor this week's assignments, creating 1 makeColor function instead of makeBlue, makeOrange, makeGreen. Less repetition is more elegant.
+        </p>
+        <h4>Reflect on how confident you feel using the problem solving techniques and process:</h4>
+        <ul>
+          <li><strong>Pseudocode</strong>: Pseudocoding feels useful when detailed enough that it provides good structure, but not as detailed as to make you feel like you're losing too much time.</li>
+          <li><strong>Trying something</strong>: Always and forever!</li>
+          <li><strong>Rubber ducky method</strong>: My current rubber duck is 1m86, has brown hair, hazelnut eyes and is called Nic. Looking at getting myself a real rubber ducky, a pink one that makes funky noises when you press on it. Kidding aside, it's a good technique for major blockers. It feels like explaining to someone/something else activates a different part of your brain, and I usually find the missing piece of the puzzle.</li>
+          <li><strong>Reading error messages</strong>: This is my first step when debugging, it helps figuring out the "stupid little mistakes", like typos or syntax errors.</li>
+          <li><strong>Console.logging</strong>: my most often used technique. It might be more useful for me to learn how to use debugger statements?</li>
+          <li><strong>Googling</strong>: This usually doesn't help me find out what the problem is, but rather how to solve it.</li>
+          <li><strong>Asking your peers for help</strong>: I'm sometimes very stubborn, I like to figure things out on my own. This being said, I feel like it will be quite different when we work on group projects, and we share the responsibility of the outcome. I feel like it will be easier to ask for help.</li>
+          <li><strong>Asking coaches for help</strong>: If I'm really not OK, believe me, you'll hear about me.</li>
+          <li><strong>Improving your process with reflection</strong>: I'm convinced reflecting on your learning is worth the time and effort.</li>
+        </ul>
+
+        <h4>Explain to your non-tech friend: Array.prototype.filter(), .map() and .reduce()</h4>
+        <p>Because a picture is worth a thousand words...</p>
+        <p>
+          var myFruitArray = [banana1, persimmon, banana2, banana3, kiwano, banana4]
+        </p>
+        <img class="blog-image" src="../images/array.jpg" alt="">
+        <p>
+          var filteredFruits = myFruitArray.filter(isBanana)
+        </p>
+        <img class="blog-image" src="../images/filter.jpg" alt="">
+        <p>
+          var mappedFruits = filteredFruits.map(peel)
+        </p>
+        <img class="blog-image" src="../images/map.jpg" alt="">
+        <p>
+          var smoothie = mappedFruits.reduce(grind, almondMilk)
+        </p>
+        <img class="blog-image" src="../images/reduce1.jpg" alt="">
+        <img class="blog-image" src="../images/reduce2.jpg" alt="">
+      </div>
+    </div>
+
+    <footer class="container u-max-full-width">
+      <a href="http://devacademy.co.nz/">More about dev academy</a>
+    </footer> 
+  
+  </body>
+</html>

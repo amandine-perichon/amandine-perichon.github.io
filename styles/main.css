@@ -184,6 +184,12 @@ header,
   display: none;
 }
 
+.blog-image {
+  display: block;
+  margin: 2rem auto;
+  width: 50%;
+}
+
 /* --------------- UNICORNS RULES ---------------*/
 
 .unicorn {
