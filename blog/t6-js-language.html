@@ -42,7 +42,7 @@
       <div class="blog-content row">
         <h4>Use cases for parentheses ( )</h4>
         <p>
-          Parentheses are used to define a function. The parentheses will contain zero, one or more parameters.
+          Parentheses are used to define a function. The parentheses will contain zero, one or more parameters
           <pre><code>
             function hello () {
               console.log("Hello")
@@ -56,13 +56,13 @@
         </p>
 
         <p>
-          Parentheses are used to call a function. The parentheses will contain zero, one or more arguments.
+          Parentheses are used to call a function. The parentheses will contain zero, one or more arguments
           <pre><code>hello()</code></pre>
           <pre><code>helloPony("Twilight Sparkle")</code></pre>
         </p>
 
         <p>
-          Parentheses can contain an anonymous function (module) which will be called right away.
+          Parentheses can contain an anonymous function (module) which will be called right away
           <pre><code>
             (function () {
               var myPony = "Rainbow Dash"
@@ -73,7 +73,7 @@
         </p>
 
         <p>
-          Parenthese are used to group expressions and force a certain order between operations
+          Parentheses are used to group expressions and force a certain order between operations
           <pre><code>
             var poniesOnScreen = (3 + 4) * 2
           </code></pre>
@@ -120,7 +120,7 @@
 
         <h4>Use cases for brackets [ ]</h4>
         <p>
-          Brackets are used to create an array literal.
+          Brackets are used to create an array literal
           <pre><code>
             var LittlePonies = ["Twilight Sparkle", "Rainbow Dash", "Pinkie Pie"]
           </code></pre>
@@ -130,6 +130,14 @@
           Brackets are used to to access an array element, through the bracket notation
           <pre><code>
             myFavoritePony = LittlePonies[2]
+          </code></pre>
+        </p>
+
+        <p>
+          Brackets are used in regular expressions to represent a group or range of characters
+          <pre><code>
+          var hasKorP = /[kp]/
+            console.log(("Pinkie Pie").match(hasKorP))
           </code></pre>
         </p>
 
@@ -146,13 +154,13 @@
             var PinkiePie = {
               name: "Pinkie Pie",
               gender: "Female",
-              favouriteColor: "pink",
+              favouriteColor: "pink"
             }
           </code></pre>
         </p>
 
         <p>
-          Braces are used to group several statements in a block, for instance in a control flows, or to define a function
+          Braces are used to group several statements in a block, for instance in a control flow, or to define a function
           <pre><code>
             if (myFavoritePony === "Pinkie Pie") {
               console.log("I'm gonna make you smile and I will brighten up your day-aaay!")
@@ -170,6 +178,7 @@
         <p>
           Single and double quotes are used to create a string literal
           <pre><code>var ponyName = "Applejack"</code></pre>
+          <pre><code>var ponyName2 = 'Mrs. Cup Cake'</code></pre>
         </p>
 
         <p>
