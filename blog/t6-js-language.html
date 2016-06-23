@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Chango' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <title>Web dev and unicorns</title>
+    <meta charset="UTF-8">
+  </head>
+
+  <body>
+    <header class="container u-max-full-width">
+            <div class="nav">
+        <div class="two columns"><a href="../unicorns.html" title="Unicorns">Unicorns</a></div>
+        <div class="two columns"><a href="../blogs.html" title="Blogs">Blogs</a></div>
+        <div class="two columns logo"><a href="index.html" title="Index"><img src="../images/hexicorn.png"></a></div>
+        <div class="two columns"><a href="#" title="Projects">Projects</a></div>
+        <div class="two columns"><a href="#" title="About">About</a></div>
+      </div>
+    </header>
+
+    <div class="intro container">
+      <div class="website-title row">
+        <h1>Web dev <br> and unicorns</h1>
+      </div> 
+    </div>
+
+    <div class="blog-list container">
+      <div class="blog row">
+        <div class="blog-reference three columns">
+          <p>T6</p>
+        </div>
+        <div class="blog-summary nine columns">
+          <h3>JavaScript Pony Language</h3> 
+        </div>
+      </div>
+      <div class="blog-content row">
+        <h4>Use cases for parentheses ( )</h4>
+        <p>
+          Parentheses are used to define a function. The parentheses will contain zero, one or more parameters.
+          <pre><code>
+            function hello () {
+              console.log("Hello")
+            }
+          </code></pre>
+          <pre><code>
+            function helloPony (pony) {
+              console.log("Hello " + pony)
+            }
+          </code></pre>
+        </p>
+
+        <p>
+          Parentheses are used to call a function. The parentheses will contain zero, one or more arguments.
+          <pre><code>hello()</code></pre>
+          <pre><code>helloPony("Twilight Sparkle")</code></pre>
+        </p>
+
+        <p>
+          Parentheses can contain an anonymous function (module) which will be called right away.
+          <pre><code>
+            (function () {
+              var myPony = "Rainbow Dash"
+              helloPony(myPony)
+            })()
+          </code></pre>
+
+        </p>
+
+        <p>
+          Parenthese are used to group expressions and force a certain order between operations
+          <pre><code>
+            var poniesOnScreen = (3 + 4) * 2
+          </code></pre>
+        </p>
+
+        <p>
+          Parentheses contain a boolean expression which will be evaluated in an if, while, do/while control flow or loop 
+          <pre><code>
+            if (myFavoritePony === "Pinkie Pie") {
+              console.log("I'm gonna make you smile and I will brighten up your day-aaay!")
+            }
+          </code></pre>
+        </p>
+
+        <p>
+          Parentheses contain the initilisation, end condition and increment statements in a for loop
+          <pre><code>
+            for (var i = 0; i < ponies.length; i++) {
+              console.log(i)
+            }
+          </code></pre>
+        </p>
+
+        <p>
+          Parentheses contain a case parameter in a switch statement
+          <pre><code>
+            switch (color) {
+              case "pink":
+                myPony = "Pinkie Pie"
+                break
+              case "green":
+                myPony = "AppleJack"
+                break
+              case "rainbow"
+                myPony = "Rainbow Dash"
+            }
+          </code></pre>
+        </p>
+
+        <p>
+          Parentheses can be used as... parentheses in a string
+          <pre><code>console.log("These are parentheses: ( )")</code></pre>
+        </p>
+
+        <h4>Use cases for brackets [ ]</h4>
+        <p>
+          Brackets are used to create an array literal.
+          <pre><code>
+            var LittlePonies = ["Twilight Sparkle", "Rainbow Dash", "Pinkie Pie"]
+          </code></pre>
+        </p>
+
+        <p>
+          Brackets are used to to access an array element, through the bracket notation
+          <pre><code>
+            myFavoritePony = LittlePonies[2]
+          </code></pre>
+        </p>
+
+        <p>
+          Brackets can be used as... brackets in a string
+          <pre><code>console.log("These are brackets: [ ]")</code></pre>
+        </p>
+
+        <h4>Use cases for braces { }</h4>
+
+        <p>
+          Braces are used to create an object literal
+          <pre><code>
+            var PinkiePie = {
+              name: "Pinkie Pie",
+              gender: "Female",
+              favouriteColor: "pink",
+            }
+          </code></pre>
+        </p>
+
+        <p>
+          Braces are used to group several statements in a block, for instance in a control flows, or to define a function
+          <pre><code>
+            if (myFavoritePony === "Pinkie Pie") {
+              console.log("I'm gonna make you smile and I will brighten up your day-aaay!")
+            }
+          </code></pre>
+          <pre><code>
+            function helloPony (pony) {
+              console.log("Hello " + pony)
+            }
+          </code></pre>
+        </p>
+
+        <h4>Use cases for single quotes ' ' and double quotes " "</h4>
+
+        <p>
+          Single and double quotes are used to create a string literal
+          <pre><code>var ponyName = "Applejack"</code></pre>
+        </p>
+
+        <p>
+          Double quotes can be used to eliminate the need to escape apostrophes
+          <pre><code>var ponyLine = "Hey Twilight Sparkle, have you seen Applejack's new hat?"</code></pre>
+        </p>
+
+        <p>
+          Single quotes can be used to eliminate the need to escape double quotes (and vice versa)
+          <pre><code>var anotherPonyLine = 'Then, Rarity said: "Oh, Fluttershy? Could you be a dear and fly faster please."'</code></pre>
+        </p>
+
+        <p>
+          It also looks like JSONs should always include double quotes, not single quotes. But the ponies aren't too worried about this yet.
+        </p>
+      </div>
+    </div>
+
+    <footer class="container u-max-full-width">
+      <a href="http://devacademy.co.nz/">More about dev academy</a>
+    </footer> 
+  
+  </body>
+</html>
