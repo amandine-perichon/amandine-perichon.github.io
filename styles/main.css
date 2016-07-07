@@ -190,6 +190,17 @@ header,
   width: 50%;
 }
 
+.blog-image-wide {
+  display: block;
+  margin: 2rem auto;
+  width: 100%;
+}
+
+.quote {
+  display: block;
+  margin: 2rem auto;
+  width: 50%;
+}
 /* --------------- UNICORNS RULES ---------------*/
 
 .unicorn {

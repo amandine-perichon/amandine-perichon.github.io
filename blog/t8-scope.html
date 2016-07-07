@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Chango' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/dracula.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>    
+    <script>hljs.initHighlightingOnLoad();</script>
+    <title>Web dev and unicorns</title>
+    <meta charset="UTF-8">
+  </head>
+
+  <body>
+    <header class="container u-max-full-width">
+            <div class="nav">
+        <div class="two columns"><a href="../unicorns.html" title="Unicorns">Unicorns</a></div>
+        <div class="two columns"><a href="../blogs.html" title="Blogs">Blogs</a></div>
+        <div class="two columns logo"><a href="index.html" title="Index"><img src="../images/hexicorn.png"></a></div>
+        <div class="two columns"><a href="#" title="Projects">Projects</a></div>
+        <div class="two columns"><a href="#" title="About">About</a></div>
+      </div>
+    </header>
+
+    <div class="intro container">
+      <div class="website-title row">
+        <h1>Web dev <br> and unicorns</h1>
+      </div> 
+    </div>
+
+    <div class="blog-list container">
+      <div class="blog row">
+        <div class="blog-reference three columns">
+          <p>T8</p>
+        </div>
+        <div class="blog-summary nine columns">
+          <h3>Three octopuses in an aquarium</h3> 
+        </div>
+      </div>
+      <div class="blog-content row">
+          <h4>This is the story of three octopuses in an aquarium <br>- or what 'scope' is, and how it works in JavaScript!</h4>
+          <br>
+          <p class="quote">
+            "You should imagine variables as tentacles, rather than boxes. They do not contain values; they grasp them"
+            <br>
+            Eloquent Javascript. <em>Marijn Haverbeke</em>
+          </p>
+          <br>
+
+          <img class="blog-image-wide"src="../images/octopus.png" alt=""></img>
+
+          <pre><code class="js">
+// This is the story of bigOctopus, smallOctopus, and tinyOctopus 
+// and their toy sharing arrangement inside bigAquarium
+
+// bigOctopus lives in the bigAquarium
+// In the bigAquarium, you can find two smaller aquariums: IF aquarium and smallAquarium
+function bigAquarium () {
+  // bigOctopus has a big heart! He always lets everyone play with his toys
+  // That includes the other octopus in the bigAquarium: smallOctopus and tinyOctopus
+  var bigOctopusTentacleOne = "ja";
+  var bigOctopusTentacleThree = "va";
+  var bigOctopusTentacleFour;
+  var bigOctopusTentacleFive;
+  // Somehow, bigOctopus's tentacle eight got stuck in a toy
+  // He is condamned to play with toy "pt" for the rest of his life!
+  const bigOctopusTentacleEight = "pt";
+
+  // tinyOctopus lives in the IF aquarium
+  // tinyOctopus does not let anyone outside of his tiny IF aquarium play with his toys
+  // but it sure can play with the toys from the BigAquarium
+  if (true) {
+    // tinyOctopusTentacleTwo's toy "sc" can only be played with in the IF aquarium
+    let tinyOctopusTentacleTwo = "sc";
+    // bigOctopusTentacleFour's toy can be played with in the IF aquarium
+    bigOctopusTentacleFour = tinyOctopusTentacleTwo;
+  }
+
+  // smallOctopus lives in the smallAquarium
+  // smallOctopus does not let anyone outside of his smallAquarium play with his toys
+  // but it sure can play with the toys from the BigAquarium
+  function smallAquarium () {
+    // smallOctopusTentacleTwo's toy "ri" can only be played with in the smallAquarium
+    var smallOctopusTentacleFour = "ri";
+    // bigOctopusTentacleFive's toy can be played with in smallAquarium
+    bigOctopusTentacleFive = smallOctopusTentacleFour;
+  }
+
+  return bigOctopusTentacleOne + bigOctopusTentacleThree + bigOctopusTentacleFour 
+          + bigOctopusTentacleFive + bigOctopusTentacleEight 
+}
+
+console.log("Scope of a toy/variable = Aquariums/functions/blocks in which it can be played with")
+console.log( "This is how you handle scope in " + bigAquarium());
+          </code></pre>
+      </div>
+    </div>
+
+    <footer class="container u-max-full-width">
+      <a href="http://devacademy.co.nz/">More about dev academy</a>
+    </footer> 
+  
+  </body>
+</html>
